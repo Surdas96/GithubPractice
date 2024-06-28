@@ -1,0 +1,35 @@
+#Git Hub
+
+#Create folder in local system
+-Right click open folder with git bash here
+-Run git init command
+-Copy and paste files in folder
+-Run git status 
+#To changes are save in local repositories 
+-Run git commit -m "Code commit"
+#Now create repository in GitHub with any name and select readme option.
+#Now add user/Git hub account
+-Run git config --global user.email "surdassutar96@outlook.com" 
+#Now give user name same as git account
+-Run git config --global user.name "Surdas96"
+#To change branch master to main
+-Run git checkout -b main
+#To add files
+-Run git add . 
+#Again to commit
+-Run git commit -m "Code commit"
+#To add files in repository 
+-Run git remote add origin https://github.com/Surdas96/KubernetesProject.git (Copy this link from project git hub inside code section)
+-Run git push origin main
+-Run git push origin main --force 
+#To Create new branch in local
+-Run git branch samplebranch
+-Run git checkout -b samplebranch
+#To Create new branch in git hub
+-Go to GitHub click on branches then new branch 
+-Go to git bash
+-Run git checkout -b Sample2
+-Run git add . 
+-Run git commit -m "Commit for Sample2"
+-Run git push origin Sample2
+-----------------------------------------------------------------------------

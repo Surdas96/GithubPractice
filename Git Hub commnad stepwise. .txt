@@ -1,0 +1,45 @@
+Git Hub commnad stepwise. 
+
+$ git init---Create empty git repository 
+$ git status -- show current status of repository 
+$ git commit -m "Lumen first commit" -- changes are save in local repositories -m = message 
+$ git config --global user.email "surdassutar96@outlook.com" -- whose account where to save
+$ git config --global user.name "Surdas96" --
+$ git checkout -b main -- change branch master to main
+$ git commit -m "First commit" // same as above
+$ git add  . -- add files 
+$ git commit -m "First commit"
+NO use##$ git remote add origin https://github.com/Surdas96/LumenTechnology.git
+NO use##$ git push origin main
+$ git remote set -url https://github.com/Surdas96/LumenTechnology.git
+$ git config --global user.email "surdassutar96@outlook.com"
+$ git config --global user.name "Surdas96"
+$ git remote add origin https://github.com/Surdas96/LumenTechnology.git
+$ git push origin main  -- if error occur run force command 
+$ git push origin main --force  
+
+-----------------------------------------------------------------------------------------
+# To fetch changes from github to local repository  1st go to github and change whatever u want 
+$ git pull origin main
+
+# To create new branch and add whatever 
+git branch child --to create new branch
+git checkout -b child - check and create new branch create new branch in git hub in branch tab
+
+ git status
+ git add .
+ git commit -m "Merge from main"
+ git push origin child
+ git push origin child --force
+-----------------------------------------------------------------------------------------
+
+Simple commands to push any files
+-Create folder 
+-add files 
+-Open git bash
+-git checkout -b main
+-git commit -m "first commit"
+-git add  .
+-git remote add origin github repo link
+-git push origin main
+-git push origin main --force

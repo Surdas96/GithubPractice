@@ -1,0 +1,106 @@
+Git and Git Hub Practice
+
+-Ref: https://youtu.be/uwyP5SNlQAU?si=vMb5rPu6nQgBPR1f
+
+#Create any folder in local system.
+-Open folder in VS code
+-Open terminal
+-Run git config --global user.name "Surdas Sutar"
+-Run git config --global user.email surdassutar96@outlook.com
+-Run git --list
+-Create one file under created folder in vs code (name index.html and type code any eg. select html:5 )
+-Run git init
+-Run git status ( Red colour not added )
+-Run git add .  (. means all file if you give specific name git add index.html then only this file will be added )
+-Run git status ( Green colour means added )
+
+#Now for commit
+-Run git commit -m "First version index.html"
+-To check branch run git branch
+-git log (Show all info)
+-Now make some changes in code and save
+-And again run git status you will see modified index.html 
+-Run git diff  (Shows what changes you have made)
+-Run git add .
+-Run git status
+-Now commit again
+-Run git commit -m "Second commit index.html"
+-Same make change and do Third commit
+
+#Now you want to see 1st version of your file then
+-Run git log copy id from 1st commit
+-Run git show c524634973bcced64151898c8ffc0f86ba2b808f:index.html (after : give name of specific file to easily available )
+
+#Now if want to all files from version 1 to see then
+-Run git checkout 651b9a5f33ca3d1d568c65f4b052461f1d7079a6 -- * 
+Here you will see actual files changes in vs code
+
+#Now if want to see all latest versions
+-Run git checkout master -- *
+
+#To restore file before git add . command
+-git restore . (Restore all the last changes made and shows previous version)
+
+#To restore file after doing git add . command
+-git restore --staged . 
+ your file return back from staging area
+-Run git restore . 
+
+#To restore filer after git add. and again made new changes before commit
+-Run git restore --worktree . 
+your last mistake will be remove 
+
+#To restore file after commit 
+-Run git reset --soft Head^
+-Run git reset --hard Head^  (HEAD^ for previous version)
+
+* Soft reset: it will revert back to last changes and allow you to make changes
+* Hard reset: directly came back to last version 
+
+#Different Git Logs Options
+-Run git log -p -1 (It shows last commit)
+-Run git log -p -2 (Shows last 2 commit )
+-Run git log --stat (Summery of changes)
+-Run git log --pretty=oneline (Shows commit in one line)
+-Run git log --pretty=format:"%h - %an, %ar:%s"
+-Run git log -S function_name 
+-Run git log --grep="V2" (shows specific msg add msg in bracket )
+-Run log --since="date"
+-Run log --until="date"
+-Run git log --author="name"
+-Run git log --no-merges
+
+# Now create new repo in git hub
+-Repo name myrepo
+-Run below command to push files. 
+git remote add origin https://github.com/Surdas96/myrepo.git 
+git branch -M main
+git push -u origin main
+
+# Now to pull from repo to VS code
+-Create one file in repo
+-add any contain 
+-Go to VS code
+-Run git pull
+
+# Git Branching and Merging 
+
+Create new branch 
+-Run git branch 
+-Run git branch design (New design branch will be created)
+-Run git checkout design (Switching branch main to design)
+-Create new file or change any changes in codes. 
+- Now commit
+-Run git commit -m "New branch new file"
+
+# To merge design branch to main
+-Go to 1st main branch -git checkout main
+-Run git merge design
+-If you do git push all files go to repos
+
+------------------------------------------------------------------
+
+
+
+
+
